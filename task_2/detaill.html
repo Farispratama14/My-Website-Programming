@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pendaftar - Faris Pratama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Detail Pendaftar</h1>
+        <table>
+            <tr>
+                <th>Nama Lengkap</th>
+                <td><span id="name"></span></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><span id="email"></span></td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td><span id="nim"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('name').textContent = urlParams.get('name');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('nim').textContent = urlParams.get('nim');
+    </script>
+
+    <footer>
+        <p>&copy; Faris Pratama 2024</p>
+    </footer>
+</body>
+</html>

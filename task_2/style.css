@@ -1,0 +1,111 @@
+/* Style untuk layout umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Style untuk judul */
+.title {
+    text-align: center;
+    font-size: 28px;
+    color: #5a9bd5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Style untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5a5a5a;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #5a9bd5;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+/* Style untuk tombol */
+button {
+    padding: 12px;
+    background-color: #5a9bd5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a8cc4;
+}
+
+/* Style untuk footer */
+footer {
+    background-color: #5a9bd5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi muncul secara perlahan */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+footer:hover {
+    background-color: #4a8cc4;
+}
